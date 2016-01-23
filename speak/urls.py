@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from speak.core.views import home
+from speak.user.views import register
 
 urlpatterns = [
     url(r'^$', home),
+    url(r'^cadastro/$', register),
     url(r'^admin/', admin.site.urls),
 ]
