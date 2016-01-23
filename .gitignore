@@ -1,4 +1,6 @@
 # speak
+staticFiles/
+.env
 .idea/
 .speak/
 *.sqlite3
