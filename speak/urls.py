@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from speak.core.views import home
-from speak.user.views import register
+from speak.registers.views import register
 
 urlpatterns = [
     url(r'^$', home),

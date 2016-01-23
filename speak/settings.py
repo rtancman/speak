@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'speak.core',
-    'speak.user',
+    'speak.registers',
 ]
 
 MIDDLEWARE_CLASSES = [

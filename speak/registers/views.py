@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 
 def register(request):
-    return HttpResponse()
+    return render(request, 'registers/register_form.html')
