@@ -7,13 +7,16 @@
 <body>
 
 <form action="." method="post">
+    {% csrf_token %}
     <p>
-        <label>Nome:</label>
-        <input type="text" name="name" />
+        <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
+        {{ form.name }}
+        {{ form.name.errors }}
     </p>
     <p>
-        <label>Email:</label>
-        <input type="email" name="email" />
+        <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
+        {{ form.email }}
+        {{ form.email.errors }}
     </p>
     <input type="submit" value="enviar">
 </form>
